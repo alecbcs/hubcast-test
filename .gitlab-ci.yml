@@ -2,5 +2,5 @@ build-job:
   stage: build
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
-    - sleep 60
+    - sleep 30
     - echo "Finished!"
