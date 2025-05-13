@@ -1,2 +1,2 @@
 # hubcast-test
-Testing https://github.com/llnl/hubcast before deploying more widely.
+Testing https://github.com/LLNL/hubcast before deploying more widely.
