@@ -4,5 +4,4 @@ build-job:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
     - sleep 3
-    - exit 1
     - echo "Finished!"
