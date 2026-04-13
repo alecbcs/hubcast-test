@@ -11,5 +11,5 @@ build-2-job:
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
-    - sleep 4
+    - sleep 3
     - echo "Finished!"
