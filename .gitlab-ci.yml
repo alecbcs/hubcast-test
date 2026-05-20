@@ -1,5 +1,7 @@
 build-job:
   stage: build
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
@@ -8,6 +10,8 @@ build-job:
 
 build-2-job:
   stage: build
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
