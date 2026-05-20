@@ -1,4 +1,4 @@
 Repo:
   dest_org: alecbcs
   dest_name: hubcast-test
-  check_type: job
+  create_mr: true
