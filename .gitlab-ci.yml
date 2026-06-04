@@ -1,3 +1,7 @@
+stages:
+  - build
+  - trigger
+
 build-job:
   stage: build
   script:
@@ -13,3 +17,15 @@ build-2-job:
     - echo "Running..."
     - sleep 5
     - echo "Finished!"
+
+trigger-child-pipeline-1:
+  stage: trigger
+  trigger:
+    include: child-pipeline-1.yml
+    strategy: depend
+
+trigger-child-pipeline-2:
+  stage: trigger
+  trigger:
+    include: child-pipeline-2.yml
+    strategy: depend

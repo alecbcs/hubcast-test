@@ -4,4 +4,5 @@ Repo:
   create_mr: true
   check_types:
     - pipeline
+    - child-pipelines
     - jobs
