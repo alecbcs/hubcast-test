@@ -3,7 +3,7 @@ build-job:
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
-    - sleep 8
+    - sleep 16
     - echo "Finished!"
 
 build-2-job:
@@ -11,7 +11,7 @@ build-2-job:
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
-    - sleep 4
+    - sleep 8
     - echo "Finished!"
 
 build-3-job:
@@ -19,5 +19,5 @@ build-3-job:
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
     - echo "Running..."
-    - sleep 2
+    - sleep 4
     - echo "Finished!"
